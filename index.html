@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="main">
+        <section class="section">
+            <h2 class="para">Password Generator</h2>
+
+            <div class="password-display">
+               <p class="input" id="show-password"></p>
+            </div>
+        
+            <div class="btn-group">
+               <button id="copy-password">Copy Password</button>
+            </div>
+
+            <div class="options">
+               <h3 class="small-para">Options</h3>
+               <label id="label">
+                   <div class="input-design">
+                      <input class="checkbox" type="checkbox" id="uppercase" checked /> 
+                      <p class="text">Include uppercase letters</p>
+                   </div>
+                   <div class="input-design">
+                      <input class="checkbox" type="checkbox" id="lowercase" checked />
+                      <p class="text">Include lowercase letters</p>
+                   </div>
+                   <div class="input-design">
+                      <input class="checkbox" type="checkbox" id="numbers" checked />
+                      <p class="text">Include numbers</p>
+                   </div>
+                   <div class="input-design">
+                      <input class="checkbox" type="checkbox" id="symbols" checked />
+                      <p class="text">Include symbols</p>
+                   </div>
+               </label>
+            </div>
+
+            <div class="length">
+               <label class="text" for="lengthRange">Password length:</label>
+               <input class="range" type="range" id="get-length-range" min="4" max="20" value="0"/>
+               <span id="show-length-value">4</span>
+            </div>
+
+            <form id="form">
+               <button id="generate-password" type="submit">Generate Password</button>
+            </form>
+       </section>
+    </main>
+    <script src="java.js"></script>
+  </body>
+</html>
